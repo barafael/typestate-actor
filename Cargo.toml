@@ -1,0 +1,14 @@
+[package]
+authors = ["Rafael Bachmann <rafael.bachmann.93@gmail.com>"]
+edition = "2018"
+name = "typestate-actor"
+version = "0.0.1"
+
+[profile.release]
+codegen-units = 1
+lto = true
+
+[dependencies]
+log = "0.4.14"
+thiserror = "1.0.0"
+tokio = { version = "1", features = ["full"] }
